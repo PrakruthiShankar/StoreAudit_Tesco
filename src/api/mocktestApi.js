@@ -5,10 +5,13 @@ import delay from './delay';
 // All calls return promises.
 const answers = [
   {
-    id: 'yes'
+    id: 'Not Started'
   },
   {
-    id: 'no'
+    id: 'Started'
+  },
+  {
+    id: 'Complete'
   }
 ];
 

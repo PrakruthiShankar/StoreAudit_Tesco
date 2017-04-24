@@ -1,4 +1,6 @@
 export default{
 	answers: [],
-	tasks: []
+	tasks: [],
+	questions: [],
+	ajaxCallsInProgress: 0
 };

@@ -5,6 +5,7 @@ import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
 import taskPage from './components/Task/taskPage';
 import ManageTaskPage from './components/Task/ManageTaskPage';//eslint-disable-line import/no-named-as-default
+import ManageQuestionPage from './components/Task/ManageQuestionPage';//eslint-disable-line import/no-named-as-default
 
 export default (
   <Route path="/" component={App}>
@@ -13,5 +14,6 @@ export default (
     <Route path="task" component={ManageTaskPage} />
     <Route path="task/:id" component={ManageTaskPage} />
     <Route path="tasks" component={taskPage} />
+    <Route path="questions" component={ManageQuestionPage} />
   </Route>
 );

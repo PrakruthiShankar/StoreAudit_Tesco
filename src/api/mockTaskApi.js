@@ -52,8 +52,8 @@ class taskApi {
       setTimeout(() => {
         // Simulate server-side validation
         const minTaskNameLength = 1;
-        if (task.taskname.length < minTaskNameLength) {
-          reject(`Task must be at least ${minTaskNameLength} characters.`);
+       if (task.taskname.length < minTaskNameLength) {
+         reject(`Task must be at least ${minTaskNameLength} characters.`);
         }
 
         if (task.id) {

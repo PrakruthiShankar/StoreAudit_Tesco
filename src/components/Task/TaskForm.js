@@ -7,37 +7,34 @@ const TaskForm = ({task, allTasks, onSave, onChange, saving, errors}) => {
     <form>
       <h1>Task list</h1>
 
-      <SelectInput
-        name="Task1"
-        label="Task1"
-        value={task.taskname}
-        defaultOption="Select Option"
-        options={allTasks}
-        onChange={onChange} error={errors.taskname}/>
+     <TextInput
+     name ="taskname"
+     label = "TaskName"
+     value = {task.taskname}
+     onChange={onChange}
+     error={errors.taskname}/>
 
       <SelectInput
-        name="Task2"
-        label="Task2"
+        name="Status"
+        label="Status"
         value={task.Status}
         defaultOption="Select Option"
         options={allTasks}
-        onChange={onChange} error={errors.Status}/>
+       onChange={onChange} error={errors.Status}/>
 
-      <SelectInput
-        name="Task3"
-        label="Task3"
-        value={task.StartDate}
-        defaultOption="Select Option"
-        options={allTasks}
-        onChange={onChange} error={errors.StartDate}/>
-
-      <SelectInput
-        name="Task4"
-        label="Task4"
-        value={task.EndDate}
-        defaultOption="Select Option"
-        options={allTasks}
-        onChange={onChange} error={errors.EndDate}/>
+      <TextInput
+     name ="StartDate"
+     label = "StartDate"
+     value = {task.StartDate}
+     onChange={onChange}
+     error={errors.StartDate}/>
+     
+     <TextInput
+     name ="EndDate"
+     label = "EndDate"
+     value = {task.EndDate}
+     onChange={onChange}
+     error={errors.EndDate}/>
 
       <input
         type="submit"

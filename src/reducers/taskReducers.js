@@ -6,6 +6,18 @@ export default function taskReducers (state = initialState.tasks, action) {
 		case types.LOAD_TASKS_SUCCESS :
 		return action.tasks;
 
+		case types.CREATE_TASK_SUCCESS:
+		return [
+		...state,
+		Object.assign({}, action.task)
+		];
+
+		case types.UPDATE_TASK_SUCCESS:
+		return [
+		...state.filter(task => task.id !== action.task.id),
+		Object.assign({}, action.task)
+		];
+
 		default:
 		return state;
 	}
